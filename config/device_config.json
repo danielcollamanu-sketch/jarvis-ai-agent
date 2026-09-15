@@ -8,52 +8,20 @@
   "apps_and_functions": {
     "audio": {
       "enabled": true,
-      "functions": [
-        "play_music",
-        "pause_music",
-        "stop_audio",
-        "set_volume",
-        "list_playlists"
-      ]
+      "functions": ["play_music", "pause_music", "stop_audio", "set_volume", "list_playlists"]
     },
     "system": {
       "enabled": true,
-      "functions": [
-        "get_system_stats",
-        "list_processes",
-        "get_network_info",
-        "get_storage_info",
-        "check_system_health"
-      ]
+      "functions": ["get_system_stats", "list_processes", "get_network_info", "get_storage_info", "check_system_health"]
     },
     "files": {
       "enabled": true,
-      "functions": [
-        "list_directory",
-        "read_file",
-        "write_file",
-        "delete_file",
-        "search_files"
-      ],
-      "restricted_paths": [
-        "/etc",
-        "/sys",
-        "/root",
-        "/boot"
-      ]
+      "functions": ["list_directory", "read_file", "write_file", "delete_file", "search_files"],
+      "restricted_paths": ["/etc", "/sys", "/root", "/boot"]
     },
     "network": {
       "enabled": true,
-      "functions": [
-        "ping_host",
-        "check_internet",
-        "get_device_ip",
-        "discover_local_devices"
-      ]
-    },
-    "external_services": {
-      "enabled": false,
-      "functions": []
+      "functions": ["ping_host", "check_internet", "get_device_ip", "discover_local_devices"]
     }
   },
   "permissions": {
@@ -66,21 +34,12 @@
     "enable_sandboxing": true,
     "enable_audit_logging": true,
     "audit_log_file": "config/audit.log",
-    "require_user_confirmation": {
-      "system_changes": true,
-      "file_deletion": true,
-      "process_execution": false
-    }
+    "require_user_confirmation": {"system_changes": true, "file_deletion": true, "process_execution": false}
   },
   "research": {
     "enable_autonomous_research": true,
     "respect_robots_txt": true,
-    "research_topics": [
-      "technology",
-      "science",
-      "artificial_intelligence",
-      "programming"
-    ]
+    "research_topics": ["technology", "science", "artificial_intelligence", "programming"]
   },
   "network_mesh": {
     "enabled": true,

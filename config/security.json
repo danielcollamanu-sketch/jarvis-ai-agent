@@ -15,45 +15,19 @@
       "max_modification_percentage": 0.1
     },
     "file_operations": {
-      "allowed_read_paths": [
-        "./config",
-        "./data",
-        "./documents"
-      ],
-      "allowed_write_paths": [
-        "./config",
-        "./data",
-        "./logs"
-      ],
-      "restricted_extensions": [
-        ".exe",
-        ".sh",
-        ".bat",
-        ".cmd"
-      ]
+      "allowed_read_paths": ["./config", "./data", "./documents"],
+      "allowed_write_paths": ["./config", "./data", "./logs"],
+      "restricted_extensions": [".exe", ".sh", ".bat", ".cmd"]
     },
     "network": {
-      "allowed_protocols": [
-        "http",
-        "https",
-        "ws",
-        "wss"
-      ],
+      "allowed_protocols": ["http", "https", "ws", "wss"],
       "blocked_domains": [],
-      "rate_limiting": {
-        "requests_per_minute": 60,
-        "requests_per_hour": 1000
-      }
+      "rate_limiting": {"requests_per_minute": 60, "requests_per_hour": 1000}
     },
     "autonomous_actions": {
       "min_autonomy_level_for_action": 0.4,
       "require_whitelist": true,
-      "whitelisted_actions": [
-        "research",
-        "learn",
-        "self_improvement",
-        "background_monitoring"
-      ]
+      "whitelisted_actions": ["research", "learn", "self_improvement", "background_monitoring"]
     }
   },
   "audit_settings": {
