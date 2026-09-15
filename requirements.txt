@@ -1,0 +1,43 @@
+# JARVIS AI Agent Requirements
+
+# Core dependencies
+python-dotenv>=1.0.0
+requests>=2.31.0
+aiohttp>=3.9.0
+
+# Data & Storage
+sqlite3
+sqlalchemy>=2.0.0
+
+# Networking
+zeroconf>=0.131.0  # mDNS for device discovery
+scapy>=2.5.0
+
+# Web scraping & research
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+selenium>=4.15.0  # For JavaScript-heavy sites
+
+# NLP & Understanding
+nltk>=3.8.0
+textblob>=0.17.0
+
+# Async operations
+aiofiles>=23.2.0
+aioscheduler>=0.0.1
+
+# Monitoring & Logging
+loguru>=0.7.0
+watchdog>=3.0.0
+
+# Security
+cryptography>=41.0.0
+pyjwt>=2.8.0
+
+# Development
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+black>=23.9.0
+flake8>=6.1.0
+mypy>=1.5.0
